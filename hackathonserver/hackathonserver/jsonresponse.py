@@ -3,10 +3,10 @@ from django.views import View
 def get(request):
   print(request)
   dict2 = {
-    'asdf': 'ii',
+    'melhor': 'api',
   }
   data = {
     'name': dict2,
-    'version': 'oh wait',
+    'lovelace': 'que vc respeita',
   }
   return JsonResponse(data)

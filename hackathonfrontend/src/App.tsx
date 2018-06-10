@@ -5,10 +5,10 @@ class App extends React.Component <any, any> {
   public state={textFromServer: 'carregando'};
   
   public componentDidMount() {
-    axios.get('http://127.0.0.1:8000/getjson/')
+    axios.get('https://lovelace.localtunnel.me/getjson/')
     .then(response => {
-      // console.log(response);
-      this.setState({textFromServer: JSON.stringify(response)});
+      console.log(response);
+      this.setState({textFromServer: JSON.stringify(response.data)});
     })
     .catch(error => console.warn(error));
   }
@@ -18,7 +18,7 @@ class App extends React.Component <any, any> {
     return (
       <React.Fragment>
         <div>{this.state.textFromServer}</div>
-        <div>funcionou</div>
+        <div>calma que</div>
       </React.Fragment>
     );
   }

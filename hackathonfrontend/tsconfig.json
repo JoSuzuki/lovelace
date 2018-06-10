@@ -31,6 +31,7 @@
     "webpack",
     "jest",
     "src/setupTests.ts",
-    "quokka.ts"
+    "quokka.ts",
+    "server.js"
   ]
 }
