@@ -1,0 +1,1 @@
+web: cd hackathonfrontend && node server.js
