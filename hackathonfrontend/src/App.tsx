@@ -7,7 +7,7 @@ class App extends React.Component <any, any> {
   public componentDidMount() {
     axios.get('http://127.0.0.1:8000/getjson/')
     .then(response => {
-      console.log(response);
+      // console.log(response);
       this.setState({textFromServer: JSON.stringify(response)});
     })
     .catch(error => console.warn(error));
@@ -18,6 +18,7 @@ class App extends React.Component <any, any> {
     return (
       <React.Fragment>
         <div>{this.state.textFromServer}</div>
+        <div>funcionou</div>
       </React.Fragment>
     );
   }
